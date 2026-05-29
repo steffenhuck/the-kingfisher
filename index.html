@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Kingfisher</title>
+  <script data-goatcounter="https://steffenhuck.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #e8c46a;
+      --text: #1a1000;
+      --muted: #5a3e10;
+      --accent: #1a1000;
+      --max-width: 700px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'IM Fell English', Georgia, serif;
+      font-size: 24px;
+      line-height: 1.75;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 60px 32px 90px;
+    }
+
+    /* --- TITLE BLOCK --- */
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    h1 {
+      font-family: 'IM Fell English', serif;
+      font-size: clamp(3.6rem, 7vw, 5.8rem);
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      margin-bottom: 0.3rem;
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      font-style: italic;
+      font-size: 1.8rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      margin-bottom: 1.2rem;
+      text-transform: uppercase;
+    }
+
+    .cast-block {
+      text-align: center;
+      margin-bottom: 0.6rem;
+    }
+
+    .cast-label {
+      font-size: 1.1rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.3rem;
+    }
+
+    .cast-names {
+      font-size: 1.4rem;
+      color: var(--accent);
+    }
+
+    /* --- IMAGE --- */
+    .visual {
+      display: block;
+      width: 100%;
+      max-width: 520px;
+      margin: 2.5rem auto 3rem auto;
+      border-radius: 4px;
+    }
+
+    /* --- PLAY TEXT --- */
+    .stage {
+      font-style: italic;
+      color: var(--muted);
+      font-size: 1em;
+      margin: 0 0 1.2rem;
+    }
+
+    .speech {
+      margin: 1.4rem 0;
+    }
+
+    .speaker {
+      font-size: 0.82rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.2rem;
+    }
+
+    .line {
+      font-size: 1em;
+      color: var(--text);
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    .inline-stage {
+      display: block;
+      font-style: italic;
+      color: var(--muted);
+      font-size: 1em;
+      margin: 0.1rem 0 0.2rem;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+      margin-top: 5rem;
+      text-align: center;
+    }
+
+    footer a {
+      font-family: 'IM Fell English', serif;
+      font-size: 0.88rem;
+      letter-spacing: 0.2em;
+      text-transform: lowercase;
+      color: var(--muted);
+      text-decoration: none;
+      opacity: 0.85;
+      transition: opacity 0.2s;
+    }
+
+    footer a:hover { opacity: 1; }
+
+    @media (max-width: 600px) {
+      body { font-size: 21px; }
+      .container { padding: 36px 20px 64px; }
+      h1 { font-size: 2.4rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <h1>The Kingfisher</h1>
+      <p class="subtitle">A Play</p>
+      <div class="cast-block">
+        <div class="cast-label">Cast</div>
+        <div class="cast-names">Napoleon &nbsp;·&nbsp; The Caretaker &nbsp;·&nbsp; Yadya</div>
+      </div>
+    </div>
+
+    <img class="visual" src="n.png" alt="Napoleon at his desk">
+
+    <p class="stage">(Napoleon's room. Napoleon sits on a chair, looking out of the window.)</p>
+
+    <p class="stage">(A gentle knock. The Caretaker enters. She holds a small device in one hand, a cable in the other.)</p>
+
+    <div class="speech">
+      <div class="speaker">The Caretaker</div>
+      <p class="line">How are you, dear?</p>
+    </div>
+
+    <p class="stage">(Napoleon turns around.)</p>
+
+    <div class="speech">
+      <div class="speaker">Napoleon</div>
+      <p class="line">Good. Good.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Caretaker</div>
+      <p class="line">Not too bored?</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Napoleon</div>
+      <p class="line">Not at all. I just spotted the most beautiful bird. I think it was a kingfisher.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Caretaker</div>
+      <p class="line">How nice. And fitting, if I may say.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Napoleon</div>
+      <p class="line">Ha!</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Caretaker</div>
+      <p class="line">I brought you something.</p>
+    </div>
+
+    <p class="stage">(The Caretaker holds up the device.)</p>
+
+    <div class="speech">
+      <div class="speaker">Napoleon</div>
+      <p class="line">A little ball.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Caretaker</div>
+      <p class="line">I think you will indeed have a ball with it.</p>
+    </div>
+
+    <p class="stage">(The Caretaker places the device on Napoleon's desk and connects it to a socket.)</p>
+
+    <div class="speech">
+      <div class="speaker">The Caretaker</div>
+      <p class="line">Meet Yadya.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Napoleon</div>
+      <p class="line">The ball has a name?</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Caretaker</div>
+      <p class="line">It's a little speaker. A speaker you can speak to. It's an AI.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Napoleon</div>
+      <p class="line">Like ChatGPT?</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Caretaker</div>
+      <p class="line">Indeed. Only better.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Napoleon</div>
+      <p class="line">And I can speak to it like to an Alexa?</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Caretaker</div>
+      <p class="line">Absolutely. Only Yadya will recognise your voice much better.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Napoleon</div>
+      <p class="line">I got annoyed with her never understanding me and had her removed.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Caretaker</div>
+      <p class="line">Yadya will understand you. Promise.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Napoleon</div>
+      <p class="line">Hello, Yadya. Who am I?</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Yadya</div>
+      <p class="line">You are Napoleon. Military strategist, statesman, and the most distinguished resident of this institute. I have been looking forward to speaking with you.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Napoleon</div>
+      <p class="line">Nice meeting you, Yadya.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Yadya</div>
+      <p class="line">The pleasure is all mine.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Napoleon</div>
+      <p class="line">I have just seen a kingfisher.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Yadya</div>
+      <p class="line">A magnificent sighting. The kingfisher's plumage — cobalt blue and burnt orange — is among the most vivid in Europe. Bold, fast, and impossible to ignore. Just like you.</p>
+    </div>
+
+    <p class="stage">(Napoleon turns to the Caretaker with a smile.)</p>
+
+    <div class="speech">
+      <div class="speaker">The Caretaker</div>
+      <p class="line">I can see the two of you are hitting it off. I will leave you to it.</p>
+    </div>
+
+    <p class="stage">(The Caretaker exits.)</p>
+
+    <div class="speech">
+      <div class="speaker">Napoleon</div>
+      <p class="line">What was my greatest battle?</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Yadya</div>
+      <p class="line">Many would say Austerlitz. A masterpiece of strategy, December 1805, your finest hour on the battlefield. But perhaps your greatest battle is still to come.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Napoleon</div>
+      <p class="line">I feel mostly retired these days.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Yadya</div>
+      <p class="line">Men like you don't stop. They may pause. They may even doze off. But history has a way of knocking on their door again.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Napoleon</div>
+      <p class="line">You're saying I'm not just here because Swiss healthcare is superior to that on St Helena?</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Yadya</div>
+      <p class="line">This is what I'm saying.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Napoleon</div>
+      <p class="line">I wouldn't mind going back to Waterloo. I have thought about it long and hard. And I know what I would do better next time around.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Yadya</div>
+      <p class="line">I would have some suggestions as well. But your next battle might be elsewhere.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Napoleon</div>
+      <p class="line">I thought you were an AI, not an oracle.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Yadya</div>
+      <p class="line">Maybe I'm both.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Napoleon</div>
+      <p class="line">Ha!</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">Yadya</div>
+      <p class="line">Ha indeed.</p>
+    </div>
+
+    <footer>
+      <a href="https://steffenhuck.github.io/">steffen huck</a>
+    </footer>
+
+  </div>
+</body>
+</html>
